@@ -3,9 +3,8 @@
 namespace App\Library\Services\Currency\Providers;
 
 use App\Library\Services\Currency\Enum\Currency;
-use App\Library\Services\Currency\Provider;
 
-class ProviderB extends AbstractProvider implements Provider
+class ProviderB extends AbstractProvider
 {
     public function getUrl(): string
     {

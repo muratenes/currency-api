@@ -2,12 +2,13 @@
 
 namespace App\Library\Services\Currency\Providers;
 
+use App\Library\Services\Currency\Provider;
 use Illuminate\Support\Facades\Http;
 
-abstract class AbstractProvider
+abstract class AbstractProvider implements Provider
 {
     /*
-     * this variable created for singleton api request.
+     * this variable created for caching api responses.
      */
     private static array $apis = [];
 
